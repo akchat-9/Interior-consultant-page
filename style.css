@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+:root {
+    --crimson-font: 'Crimson Pro', serif;
+    --lora-font: 'Lora', serif;
+    --montserrat-font: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #181719;
+}
+
+header,
+nav,
+.nav-items,
+main,
+.readMore,
+.profile,
+.profile-card,
+.right-name {
+    display: flex;
+}
+
+header {
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+nav {
+    /* height: 10vh; */
+    width: 85vw;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-family: 'Crimson Pro', serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem;
+}
+
+.nav-items {
+    width: 35vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.nav-home {
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+}
+
+.menu-icon {
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+
+.menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+main {
+    align-items: center;
+    justify-content: space-around;
+    /* height: 100vh; */
+    width: 90vw;
+    margin: 0 auto 10rem;
+    padding-top: 5rem;
+}
+
+.left {
+    width: 40vw;
+    padding: 2rem 3rem;
+    text-align: left;
+}
+
+.text .heading {
+    font-family: var(--lora-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 61px;
+    margin-bottom: 3rem;
+}
+
+.text .description {
+    width: 25vw;
+    font-family: var(--montserrat-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 3rem;
+}
+
+.readMore {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.readMore span {
+    margin-left: 0.5rem;
+}
+
+.image {
+    width: 737px;
+    height: 555px;
+    background-image: url('photo1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.profile-card {
+    background-color: #181719;
+    position: absolute;
+    width: 410px;
+    height: 189px;
+    bottom: -111px;
+    right: 35px;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.profile-picture {
+    margin: 1rem 2rem;
+}
+
+.profile-picture img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.right-name {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name {
+    font-family: var(--montserrat-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 0.5rem;
+}
+
+.designation {
+    font-family: var(--montserrat-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+}
+
+.bottom-credit {
+    width: 287px;
+    font-family: var(--lora-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    margin: 0.5rem 2rem;
+    letter-spacing: 1px;
+}
+
+.material-icons-round {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 35px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 24px;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+footer {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    color: #A9A9A9;
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: #A9A9A9;
+}
+
+footer span a {
+    text-transform: uppercase;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #A9A9A9;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+/*FOR NAVBAR*/
+@media(max-width:1000px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .menu-logo {
+        margin-left: 1rem;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-items {
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: #181719;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.7s ease-in;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .nav-link {
+        opacity: 0;
+    }
+
+    .nav-links {
+        margin: 2rem;
+    }
+
+    @keyframes navLinkFade {
+
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+
+    }
+
+    .nav-home {
+        border-bottom: 0px;
+    }
+
+    header {
+        margin-bottom: 0;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 2rem;
+        margin: 0 auto 10rem;
+    }
+
+    .left {
+        width: 100%;
+        padding: 2rem 0 3rem;
+    }
+
+    .text .description {
+        width: 55vw;
+    }
+
+    .image {
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+@media (max-width:540px) {
+    header {
+        margin-bottom: 0;
+        height: 14vh;
+    }
+
+    nav {
+        width: 93vw;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .left {
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+
+    .text .heading {
+        font-size: 36px;
+        margin-bottom: 1rem;
+    }
+
+    .text .description {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 1rem;
+        width: 250px;
+    }
+
+    .image {
+        width: 90vw;
+        height: 279.34px;
+        margin: 0 auto;
+        background-position: center;
+    }
+
+    .profile-card {
+        width: 320px;
+        height: 138px;
+    }
+
+    .name {
+        margin-bottom: 3px;
+    }
+
+    .bottom-credit {
+        width: 210px;
+        height: 45px;
+        font-size: 18px;
+        line-height: 23px;
+        margin: 0rem 1rem
+    }
+
+    .profile-picture {
+        margin: 0.7rem 1.6rem;
+    }
+
+    .profile-card {
+        bottom: -69px;
+        right: 14px;
+    }
+}
